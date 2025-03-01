@@ -33,6 +33,8 @@
 
 .header__logo {
   display: block;
+  width: 148px;
+  height: 105px;
 }
 
 .header__logo-img {
@@ -50,12 +52,16 @@
   line-height: 24.3px;
 }
 
+.address__link {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 .cover {
   position: relative;
-  z-index: -1;
   padding: 165px 50px 50px;
   color: #ffffff;
-  background-image: url(/images/cover.jpg);
+  background-image: url(../images/cover.jpg);
   background-position: center center;
   background-size: cover;
 }
@@ -63,8 +69,13 @@
 .overlay {
   position: absolute;
   inset: 0;
-  z-index: -1;
   background-color: rgb(0 0 0 / 0.6);
+  z-index: 1;
+}
+
+.high-z {
+  z-index: 2;
+  position: relative;
 }
 
 .cover__title {
@@ -73,6 +84,7 @@
   font-size: 100px;
   line-height: 1.15;
   letter-spacing: 0.3em;
+  text-transform: uppercase;
 }
 
 .aligned-text {
@@ -111,7 +123,7 @@
 }
 
 .bet-button {
-  border: 1px solid #ffffff;
+  border: 1px solid currentColor;
   padding: 12px 32px 11px 31px;
   color: #ffffff;
   font-size: 22px;
@@ -126,6 +138,7 @@
 .lots__heading {
   margin: 0px auto 27px 40px;
   font-size: 40px;
+  text-transform: uppercase;
 }
 
 .lots__card-list {
@@ -145,35 +158,31 @@
 
 .card-link {
   height: 100%;
+  text-decoration: none;
 }
 
 .card {
   position: relative;
-  z-index: -1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
   padding: 48px 40px;
   color: #ffffff;
+  background-position: center center;
+  background-size: cover;
 }
 
 .card_type_film {
-  background-image: url(/images/card-lot-01.jpg);
-  background-position: center center;
-  background-size: cover;
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
-  background-image: url(/images/card-lot-02.jpg);
-  background-position: center center;
-  background-size: cover;
+  background-image: url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture {
-  background-image: url(/images/card-lot-03.jpg);
-  background-position: center center;
-  background-size: cover;
+  background-image: url(../images/card-lot-03.jpg);
 }
 
 .card__title {
